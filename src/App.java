@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Abstraction is to work with something we know how to use without
         // knowing how it works internally.
-        Student student = new Student(firstName: "Avery", lastName: "Miles", schoolName: "CHC");
+        Student student = new Student("Avery", "Miles", "CHC");
         System.out.println(student.greeting());
 
         Integer one = 1;
