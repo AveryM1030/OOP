@@ -5,6 +5,16 @@ public class App {
         Student student = new Student("Avery", "Miles", "CHC");
         System.out.println(student.greeting());
 
+        // Write the lines of ode to create an UndergradStudent object.
+        // using the student object as the basis for creation.
+        // Call the greeting, creditsRemaning, and isMajorComplete methods
+        // on the UndergradStuden ojbect.
+        UndergradStudent undergrad = new UndergradStudent(student.getFirstName(), student.getLastName(), student.getSchoolName(), 
+        3.75, 40, "Computer Science");
+        System.out.println(undergrad.greeting());
+        System.out.println(undergrad.creditsRemaining(40));
+        System.out.println(undergrad.isMajorComplete(40));
+
         Integer one = 1;
         Double two = 2.0;
         String twoString = "2.0";
